@@ -6,7 +6,10 @@ using namespace std;
 
 int main()
 {
-	
+	int input;
+
+	system("CLS");
+
 	Platforms platformOne("Playstation 5","Sony");
 	Platforms platformTwo("Xbox Series X","Microsoft");
 	Platforms platformThree("Nintendo Switch","Nintendo");
@@ -32,7 +35,10 @@ int main()
 	Game gameFourteen("Pokemon Sword And Shield", "Game Freak", "Nintendo");
 	Game gameFifteen("Super Mario Odyssey", "Nintendo EPD", "Nintendo");
 
-
+	do
+	{
+	
+	system("CLS");
 	cout << endl;
 	cout << "            --- Welcome to Achievement Maker ---" << endl;
 	cout << endl;
@@ -49,8 +55,6 @@ int main()
 	cout << endl;
 	cout << endl;
 
-	
-
 	cout << "3 - Make custom achievments ";
 	cout << endl;
 	cout << endl;
@@ -63,7 +67,7 @@ int main()
 	cout << endl;
 	cout << endl;
 	cout << "Menu Choice: ";
-	int input;
+
 	cin >> input;
 
 	if (input == 1)
@@ -85,6 +89,12 @@ int main()
 		cout << endl;
 		cout << "Name: " << platformThree.getPlatformName() << endl;
 		cout << "Manufacturer : " << platformThree.getPlatforManufacturermName() << endl;
+
+		cout << "" << endl;
+		cout << "Go back to main menue press any key." << endl;
+		system("pause");
+		system("CLS");
+		
 		
 	}
 	
@@ -125,6 +135,12 @@ int main()
 		cout << "Name: " << gameThirteen.getGameName() << " - Publisher: " << gameEight.getPublisherName() << " - Developer: " << gameEight.getDeveloperName() << endl;
 		cout << "Name: " << gameFourteen.getGameName() << " - Publisher: " << gameNine.getPublisherName() << " - Developer: " << gameNine.getDeveloperName() << endl;
 		cout << "Name: " << gameFifteen.getGameName() << " - Publisher: " << gameTen.getPublisherName() << " - Developer: " << gameTen.getDeveloperName() << endl;
+
+		cout << "" << endl;
+		cout << "Go back to main menue press any key." << endl;
+		system("pause");
+		system("CLS");
+
 	}
 
 	if (input == 3)
@@ -132,6 +148,12 @@ int main()
 		system("CLS");
 		cout << endl;
 		cout << " --- Make Achievement Section --- " << endl;
+
+		cout << "" << endl;
+		cout << "Go back to main menue press any key." << endl;
+		system("pause");
+		system("CLS");
+
 	}
 
 	if (input == 4)
@@ -139,10 +161,16 @@ int main()
 		system("CLS");
 		cout << endl;
 		cout << " ---  Achievements --- " << endl;
+
+		cout << "" << endl;
+		cout << "Go back to main menue press any key." << endl;
+		system("pause");
+		system("CLS");
+
 	}
 
 
-
+	} while (input != 5);
 
 
 	return 0;
