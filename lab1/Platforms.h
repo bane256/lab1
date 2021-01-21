@@ -12,21 +12,18 @@ class Platforms
 private:
 	string PlatformName;
 	string  PlatforManufacturermName;
-	string Game;
 
 public:
-	Platforms(string platformName, string platforManufacturermName,string game )
+	Platforms(string platformName, string platforManufacturermName)
 	{
 		PlatformName = platformName;
 		PlatforManufacturermName = platforManufacturermName;
 		
 	}
 
-
-	
 	string getPlatforManufacturermName();
 	string getPlatformName();
-	string getGame();
+	
 };
 
 #endif PLATFORMS_H

@@ -18,9 +18,5 @@ string Platforms::getPlatforManufacturermName()
 	return PlatforManufacturermName;
 }
 
-string Platforms::getGame()
-{
-	return Game;
-}
 
 
