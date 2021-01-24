@@ -13,10 +13,7 @@ int main()
 	Platforms platformOne("Playstation 5","Sony");
 	Platforms platformTwo("Xbox Series X","Microsoft");
 	Platforms platformThree("Nintendo Switch","Nintendo");
-
-	Platforms listOfPlatforms[3] = { platformOne ,platformTwo,platformThree };
 	
-
 	// Playstation Games
 	Game gameOne("God Of War","Santa Monica Studio","Sony Interactive Entertainment");
 	Game gameTwo("Spider-Man", "Insomniac Games", "Sony Interactive Entertainment");
@@ -38,18 +35,10 @@ int main()
 	Game gameFourteen("Pokemon Sword And Shield", "Game Freak", "Nintendo");
 	Game gameFifteen("Super Mario Odyssey", "Nintendo EPD", "Nintendo");
 
-
 	do
 	{
 	
 	system("CLS");
-
-	for (int i = 0; i < 3; i++)
-	{
-		cout << listOfPlatforms;
-	}
-
-
 	cout << endl;
 	cout << "            --- Welcome to Achievement Maker ---" << endl;
 	cout << endl;
@@ -159,23 +148,6 @@ int main()
 		system("CLS");
 		cout << endl;
 		cout << " --- Make Achievement Section --- " << endl;
-
-		cout << "What game would you like to make an achivment for";
-		
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 		cout << "" << endl;
 		cout << "Go back to main menue press any key." << endl;
